@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { useFetchProducts } from "./api/Home.api.hooks.js";
-import { Typography } from "@material-tailwind/react";
-import { ProductsGrid } from "./components/ProductsGrid.jsx";
-import { AppSpinner } from "../../components/AppSpinner.jsx";
-import { ProductsSearch } from './components/ProductsSearch.jsx';
+import { useFetchProducts } from "./api/Home.api.hooks.js"
+import { Typography } from "@material-tailwind/react"
+import { ProductsGrid } from "./components/ProductsGrid.jsx"
+import { AppSpinner } from "../../components/AppSpinner.jsx"
+import { ProductsSearch } from './components/ProductsSearch.jsx'
 
-export const HomePage = () => {
+export function HomePage() {
 
     const [filterBy, setFilterBy] = useState({ title: '' })
 
@@ -17,7 +17,7 @@ export const HomePage = () => {
     console.log(data)
 
     if (isLoading) {
-        return <AppSpinner />;
+        return <AppSpinner />
     }
 
     //todo: make sure this hook works and understand, then remove it
@@ -37,7 +37,6 @@ export const HomePage = () => {
     //         fetchData()
     //     }
     //     , [])
-
     return (
         <div className='flex flex-col w-full h-full p-8'>
             <ProductsSearch setFilterBy={setFilterBy} filterBy={filterBy} />

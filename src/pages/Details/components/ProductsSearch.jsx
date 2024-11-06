@@ -17,7 +17,7 @@ export const ProductsSearch = ({ setFilterBy, filterBy }) => {
 
     return (
         <div className="w-72">
-            <Input onChange={handleChange} name='title' label="serach" />
+            <Input on onChange={handleChange} name='title' label="serach" />
         </div>
     )
 }
