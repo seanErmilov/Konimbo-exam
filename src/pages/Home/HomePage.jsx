@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { useFetchProducts } from "../../api/Products/Products.api.hooks.js"
 import { Typography } from "@material-tailwind/react"
 import { ProductsGrid } from "./components/ProductsGrid.jsx"
 import { AppSpinner } from "../../components/AppSpinner.jsx"
 import { ProductsSearch } from './components/ProductsSearch.jsx'
+import { useFetchProducts } from "../../api/Products/Products.api.hooks.js";
 
 export function HomePage() {
 
@@ -14,7 +14,6 @@ export function HomePage() {
     }
 
     const { data, isLoading } = useFetchProducts()
-    console.log(data)
 
     if (isLoading) {
         return <AppSpinner />
@@ -40,7 +39,6 @@ export function HomePage() {
     return (
         <div className='flex flex-col w-full h-full p-8'>
             <ProductsSearch setFilterBy={setFilterBy} filterBy={filterBy} />
-            <Typography variant='h6' className='mb-6'>Home Page</Typography>
             <ProductsGrid products={filterProdacts(data, filterBy)} />
         </div>
     )
