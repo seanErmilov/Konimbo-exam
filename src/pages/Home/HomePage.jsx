@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useFetchProducts } from "./api/Home.api.hooks.js"
+import { useFetchProducts } from "../../api/Products/Products.api.hooks.js"
 import { Typography } from "@material-tailwind/react"
 import { ProductsGrid } from "./components/ProductsGrid.jsx"
 import { AppSpinner } from "../../components/AppSpinner.jsx"
