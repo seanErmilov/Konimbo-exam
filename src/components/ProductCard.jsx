@@ -1,17 +1,17 @@
 import React from 'react';
-import {Button, Card, CardBody, CardFooter, CardHeader, Typography} from "@material-tailwind/react";
-import {Link} from 'react-router-dom';
+import { Button, Card, CardBody, CardFooter, CardHeader, Typography } from "@material-tailwind/react";
+import { Link } from 'react-router-dom';
 
 
 function formatPrice(amount) {
-    return new Intl.NumberFormat('he-IL', {style: 'currency', currency: 'ILS'}).format(amount);
+    return new Intl.NumberFormat('he-IL', { style: 'currency', currency: 'ILS' }).format(amount);
 }
 
-export const ProductCard = ({product, viewMode}) => {
+export function ProductCard({ product, viewMode }) {
     return (
-        <Card className="mt-6" style={{direction: 'rtl'}}>
+        <Card className="mt-6" style={{ direction: 'rtl' }}>
             <CardHeader color="blue-gray" className="relative h-56">
-                <img src={product.image.url}/>
+                <img className='w-full h-full object-cover' src={product.image.url} />
             </CardHeader>
             <CardBody>
                 <div className='flex items-center gap-4'>
@@ -22,17 +22,17 @@ export const ProductCard = ({product, viewMode}) => {
                         {formatPrice(product.price)}
                     </Typography>
                 </div>
-                <Typography>
-                    {product.desc}
-                </Typography>
+                {viewMode &&
+                    <Typography>
+                        {product.desc}
+                    </Typography>}
             </CardBody>
             {!viewMode &&
                 <CardFooter className="pt-0 mt-auto">
                     <Button size='sm' variant='text' color='blue'>
                         <Link to={`${product.id}`} className='title'>Details</Link>
                     </Button>
-                </CardFooter>
-            }
+                </CardFooter>}
         </Card>
     );
-};
+}

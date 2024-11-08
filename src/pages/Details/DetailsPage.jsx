@@ -17,7 +17,7 @@ export function DetailsPage() {
 
     return (
         <div className='flex items-center justify-center pt-10'>
-            <div className='max-w-[40%]'>
+            <div className='sm:max-w-[40%]'>
                 <ProductCard product={product} viewMode />
             </div>
         </div>
