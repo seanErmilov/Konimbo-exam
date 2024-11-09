@@ -1,5 +1,5 @@
-import React from 'react';
-import { ProductCard } from "../../../components/ProductCard.jsx";
+import React from 'react'
+import { ProductCard } from "../../../components/ProductCard.jsx"
 
 export const ProductsGrid = ({ products }) => {
     return (
@@ -8,5 +8,5 @@ export const ProductsGrid = ({ products }) => {
                 <ProductCard key={product.id} product={product} />
             ))}
         </div>
-    );
-};
+    )
+}

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Input } from "@material-tailwind/react";
+import React from 'react'
+import { Input } from "@material-tailwind/react"
 
 
 export const ProductsSearch = ({ setFilterBy, filterBy }) => {

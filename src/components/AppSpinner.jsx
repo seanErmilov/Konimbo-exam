@@ -1,10 +1,10 @@
-import React from 'react';
-import {Spinner} from "@material-tailwind/react";
+import React from 'react'
+import { Spinner } from "@material-tailwind/react"
 
-export const AppSpinner = () => {
+export function AppSpinner() {
     return (
         <div className='h-full w-full flex justify-center items-center'>
-            <Spinner color='blue'/>
+            <Spinner color='blue' />
         </div>
-    );
-};
+    )
+}

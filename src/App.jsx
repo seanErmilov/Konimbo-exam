@@ -1,14 +1,14 @@
 import Routers from './Routers/Routers'
-import {QueryClient, QueryClientProvider} from "react-query";
+import { QueryClient, QueryClientProvider } from "react-query"
 
 const queryClient = new QueryClient()
 
 function App() {
     return (
         <QueryClientProvider client={queryClient}>
-           <div className='h-screen	w-screen'>
-               <Routers/>
-           </div>
+            <div className='h-screen	w-screen'>
+                <Routers />
+            </div>
         </QueryClientProvider>
     )
 }

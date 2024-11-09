@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ProductsSearch } from '../pages/Home/components/ProductsSearch';
+import React, { useState } from 'react'
+import { ProductsSearch } from '../pages/Home/components/ProductsSearch'
 
 
 export function Header({ setFilterBy, filterBy }) {
@@ -26,5 +26,5 @@ export function Header({ setFilterBy, filterBy }) {
                 </div>
             </div>
         </header>
-    );
+    )
 }
