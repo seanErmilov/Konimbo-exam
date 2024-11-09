@@ -22,6 +22,9 @@ This application is built in **React** and interacts with the **Konimbo API**. T
 - **Product Details Page**: Upon clicking a product, users are redirected to a page showing the product's title, image, description, and price.
 - **Responsive Design**: The app adjusts seamlessly to different screen sizes, providing a user-friendly experience on both desktop and mobile devices.
 
+## Limitations
+If I had more time, I would have focused on handling errors and managing empty data states. Currently, the project may not handle errors or empty data gracefully, but these improvements would be addressed in future updates.
+
 ## Installation Instructions
 
 1. **Clone the repository**:
@@ -36,12 +39,12 @@ This application is built in **React** and interacts with the **Konimbo API**. T
 
 3. **Install the dependencies**:
    ```bash
-   npm install
+   pnpm install
    ```
 
 4. **Start the development server**:
    ```bash
-   npm run dev
+   pnpm run dev
    ```
 
    Your app should now be live at `http://localhost:3000`.

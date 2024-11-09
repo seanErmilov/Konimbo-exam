@@ -1,10 +1,10 @@
-import React from 'react';
-import { Button, Card, CardBody, CardFooter, CardHeader, Typography } from "@material-tailwind/react";
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Button, Card, CardBody, CardFooter, CardHeader, Typography } from "@material-tailwind/react"
+import { Link } from 'react-router-dom'
 
 
 function formatPrice(amount) {
-    return new Intl.NumberFormat('he-IL', { style: 'currency', currency: 'ILS' }).format(amount);
+    return new Intl.NumberFormat('he-IL', { style: 'currency', currency: 'ILS' }).format(amount)
 }
 
 export function ProductCard({ product, viewMode }) {
@@ -34,5 +34,5 @@ export function ProductCard({ product, viewMode }) {
                     </Button>
                 </CardFooter>}
         </Card>
-    );
+    )
 }

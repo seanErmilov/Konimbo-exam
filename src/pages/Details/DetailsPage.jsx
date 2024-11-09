@@ -1,8 +1,8 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
-import { useFetchProductById } from "../../api/Products/Products.api.hooks.js";
-import { AppSpinner } from "../../components/AppSpinner.jsx";
-import { ProductCard } from "../../components/ProductCard.jsx";
+import { useParams } from 'react-router-dom'
+import { useFetchProductById } from "../../api/Products/Products.api.hooks.js"
+import { AppSpinner } from "../../components/AppSpinner.jsx"
+import { ProductCard } from "../../components/ProductCard.jsx"
 
 
 export function DetailsPage() {
