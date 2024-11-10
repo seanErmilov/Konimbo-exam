@@ -8,7 +8,6 @@ import { ProductCard } from "../../components/ProductCard.jsx"
 export function DetailsPage() {
     const { id } = useParams()
     const { data, isLoading } = useFetchProductById(id)
-    console.log({ data })
     if (isLoading) {
         return <AppSpinner />
     }
